@@ -6,14 +6,13 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Skypebord</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Skype bord top</title>
     </head>
     <body>
-        <h1>Skype Bordへようこそ！</h1>
-        testですよ
+        <h1>Skypebordへよこうこ！！</h1>
+        <?php
         
-        
+        ?>
     </body>
 </html>
