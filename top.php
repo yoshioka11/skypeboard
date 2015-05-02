@@ -11,6 +11,7 @@ and open the template in the editor.
     </head>
     <body>
         <h1>Skypebordへよこうこ！！</h1>
+        リンク貼れたかてすとだよー
         <?php
         
         ?>
