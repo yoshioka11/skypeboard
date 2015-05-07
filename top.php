@@ -10,8 +10,9 @@ and open the template in the editor.
         <title>Skype bord top</title>
     </head>
     <body>
-        <h1>Skypebordへよこうこ！！</h1>
-        リンク貼れたかてすとだよー
+        <h1>Skypebordへようこそ！！</h1>
+        <a href="./bord/postpage.php">掲示板に書き込む</a>
+
         <?php
         
         ?>

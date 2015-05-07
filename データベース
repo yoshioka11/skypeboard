@@ -1,10 +1,13 @@
-データベース
+データベース(仮)
 
 名前
 skype名
+性別
+都道府県
 内容
 削除pass
 日付
+タグ
 
 CREATE DATABASE skypebords;
 
@@ -14,6 +17,8 @@ create table bord1(ID INT AUTO_INCREMENT PRIMARY KEY,
 Title_1 VARCHAR(30),
 Skype_ID INT NOT NULL,
 Skype_name VARCHAR(30) NOT NULL,
+PrefVARCHAR(10) NOT NULL,
+Sex BOOLEAN,
 Comment VARCHAR(300) NOT NULL,
 Deleta_pass INT NOT NULL,
 Dates DATETIME NOT NULL
