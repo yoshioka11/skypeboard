@@ -9,6 +9,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
         <title></title>
     </head>
     <form method="post" action="postpage.php">
@@ -32,7 +33,8 @@ echo "<option>".$pref[$i]."</option>";
         コメント*<textarea name="comment" rows="8" cols="80">
         </textarea><br>
         削除パスワード*<input type="text" name="deleta_pass"><br>
-        <input type="submit" value="利用規約に同意して投稿する。">
+        <input type="submit" class="btn btn-default btn-lg" value="利用規約に同意して投稿">
+       
     </form>
     <body>
         <?php
