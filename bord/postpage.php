@@ -17,8 +17,8 @@ and open the template in the editor.
         タイトル<input type="text" name="title"　><br>
         *Skype ID<input type="text" name="skype_id"><br>
         名前<input type="text" name="name"><br>
-        性別<input type="radio" name="man" value="男性"> 男性
-        <input type="radio" name="girl" value="女性"> 女性<br>        
+        性別<input type="radio" name="sex" value="男性"> 男性
+        <input type="radio" name="sex" value="女性"> 女性<br>        
         <select name="pref"> 
 <?php
 //都道府県の配列
@@ -38,7 +38,22 @@ echo "<option>".$pref[$i]."</option>";
     </form>
     <body>
         <?php
-
+        $title = $_POST['title'];
+        $skype_id = $_POST['skype_id'];
+        $name = $_POST['name'];
+        $sex = $_POST['sex'];
+        $pref = $_POST['pref'];
+        $comment = $_POST['comment'];
+        $deleta_pass = $_POST['deleta_pass'];
+        //データがちゃんと送られてるかのテスト
+//        print $title.'<br>';
+//        print $skype_id.'<br>';
+//        print $name.'<br>';
+//        print $sex.'<br>';
+//        print $pref.'<br>';
+//        print $comment.'<br>';
+//        print $deleta_pass.'<br>';
+        
         ?>
     </body>
 </html>

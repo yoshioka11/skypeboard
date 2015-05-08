@@ -12,8 +12,8 @@ and open the template in the editor.
     </head>
     <body>
         <h1>Skypebordへようこそ！！</h1>
-        <a href="./bord/postpage.php">掲示板に書き込む</a>
-<button type="button" class="btn btn-default btn-lg">Large button</button>
+        <a href="./bord/postpage.php"><button type="button" class="btn btn-default btn-lg">掲示板に書き込む</button></a>
+<button type="button" class="btn btn-default btn-lg"></button>
         <?php
         
         ?>
