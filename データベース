@@ -14,12 +14,33 @@ CREATE DATABASE skypebords DEFAULT CHARACTER SET utf8;
 use skypebords;
 
 create table bord1(ID INT AUTO_INCREMENT PRIMARY KEY,
-Title_1 VARCHAR(30),
-Skype_ID VARCHAR(30) NOT NULL,
-Skype_name VARCHAR(30) NOT NULL,
+Title VARCHAR(30),
+S_ID VARCHAR(30) NOT NULL,
+S_name VARCHAR(30) NOT NULL,
 Pref VARCHAR(10) NOT NULL,
 Sex BOOLEAN,
 Comment VARCHAR(300) NOT NULL,
 Deleta_pass INT NOT NULL,
 Dates DATETIME NOT NULL
 );
+
+
+try
+{
+        //データベースに接続する文
+        $dsn = 'mysql:dbname=skypebords;host=localhost';
+        $user = 'root';
+        $password = '';
+        $dbh = new PDO($dsn,$user,$password);
+        $dbh->query('SET NAMES utf8');
+        
+        //ここからsql文
+
+$dbh= null; //接続終了
+
+    } catch (Exception $ex) {
+        
+        print 'ただいま障害により大変ご迷惑をおかけしております';
+        exit();
+        
+    }
