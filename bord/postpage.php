@@ -12,7 +12,7 @@ and open the template in the editor.
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <title></title>
     </head>
-    <form method="post" action="postpage.php">
+    <form method="post" action="post_add.php">
         
         タイトル<input type="text" name="title"　><br>
         *Skype ID<input type="text" name="skype_id"><br>
@@ -30,21 +30,15 @@ echo "<option>".$pref[$i]."</option>";
 ?>
         </select>
 <br />
-        コメント*<textarea name="comment" rows="8" cols="80">
-        </textarea><br>
+        コメント*<textarea name="comment" rows="8" cols="80"></textarea><br>
         削除パスワード*<input type="text" name="deleta_pass"><br>
         <input type="submit" class="btn btn-default btn-lg" value="利用規約に同意して投稿">
        
     </form>
     <body>
         <?php
-        $title = $_POST['title'];
-        $skype_id = $_POST['skype_id'];
-        $name = $_POST['name'];
-        $sex = $_POST['sex'];
-        $pref = $_POST['pref'];
-        $comment = $_POST['comment'];
-        $deleta_pass = $_POST['deleta_pass'];
+    
+
         //データがちゃんと送られてるかのテスト
 //        print $title.'<br>';
 //        print $skype_id.'<br>';
@@ -53,6 +47,8 @@ echo "<option>".$pref[$i]."</option>";
 //        print $pref.'<br>';
 //        print $comment.'<br>';
 //        print $deleta_pass.'<br>';
+        
+        
         
         ?>
     </body>
